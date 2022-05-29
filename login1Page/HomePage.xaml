@@ -1,0 +1,25 @@
+﻿<Window x:Class="login1Page.HomePage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:login1Page"
+        mc:Ignorable="d"
+        Title="HomePage" Height="539.4" Width="939.5">
+    <Grid Background="SkyBlue">
+        <Border BorderBrush="Black" Background="Tomato" BorderThickness="1" HorizontalAlignment="Left" Height="264" Margin="208,146,0,0" VerticalAlignment="Top" Width="530"/>
+        <Label Content="আপনি কি হিসেবে প্রবেশ  করতে চান?" FontStyle="Italic" FontSize="25" Foreground="Green" FontWeight="Bold" HorizontalAlignment="Left" Margin="248,157,0,0" VerticalAlignment="Top" Width="480" Height="74" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="-0.363"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-0.994"/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Button Content="ডাক্তার" Click="Button_Click" FontSize="25" Background="Black" Foreground="White" HorizontalAlignment="Left" Margin="430,226,0,0" VerticalAlignment="Top" Width="134" Height="38"/>
+        <Button Content="রুগী" Click="Button_Click_1" FontSize="25" Background="Black" Foreground="White" HorizontalAlignment="Left" Margin="431,300,0,0" VerticalAlignment="Top" Width="133" Height="36" RenderTransformOrigin="0.556,1.347"/>
+
+    </Grid>
+</Window>

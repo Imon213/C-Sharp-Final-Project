@@ -1,0 +1,40 @@
+﻿<Window x:Class="login1Page.loginpage1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:login1Page"
+        mc:Ignorable="d"
+        Title="loginpage1" Height="450" Width="1200">
+    <Grid Background="SkyBlue" Margin="0,0,-8,-2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="352*"/>
+            <ColumnDefinition Width="1059*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" MinHeight="188"/>
+            <RowDefinition Height="229"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="Ubutton" Content="LOGIN" Click="ubutton_Click" FontSize="25" Foreground="Tomato"  HorizontalAlignment="Left" Margin="194,41,0,0" VerticalAlignment="Top" Width="132" Height="56" Grid.Row="1" Grid.Column="1" RenderTransformOrigin="0.359,0.482"/>
+        <Label HorizontalAlignment="Left" Margin="74,63,0,0" VerticalAlignment="Top" Height="38" Width="10" Grid.Column="1"/>
+        <Label Content="User Password" FontSize="20" FontStyle="Italic" HorizontalAlignment="Left" Margin="98,161,0,0" VerticalAlignment="Top" Height="36" Width="142" RenderTransformOrigin="-0.359,0" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Content="LOGIN" FontSize="30" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Left" Margin="189,26,0,0" VerticalAlignment="Top" Height="69" Width="168" Grid.Column="1"/>
+        <Label Content="User Name" FontSize="20" FontStyle="Italic" HorizontalAlignment="Left" Margin="98,102,0,0" VerticalAlignment="Top" Height="32" Width="132" Grid.Column="1" RenderTransformOrigin="0.098,0.531"/>
+        <Button x:Name="createbutton" Click="createbutton_Click" FontSize="20" Content="CREATE ACCOUNT" HorizontalAlignment="Left" Margin="74,144,0,0" VerticalAlignment="Top" Width="262" RenderTransformOrigin="0.693,4.3" Grid.Row="1" Height="36" Grid.Column="1"/>
+        <TextBox x:Name="uname" HorizontalAlignment="Left" Height="30" FontSize="18" Margin="271,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" Grid.Column="1"/>
+        <PasswordBox x:Name="upass" HorizontalAlignment="Left" Margin="270,164,0,0" VerticalAlignment="Top" Width="228" Height="28" RenderTransformOrigin="0.581,0.592" Grid.Column="1">
+            <PasswordBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleY="-1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="-6.992"/>
+                </TransformGroup>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
+        <Label Name="namerr" Content="" FontSize="16" Foreground="Red" HorizontalAlignment="Left" Margin="557,108,0,50" Width="192" Grid.Column="1"/>
+        <Label Name="paserr" Content="" FontSize="16" Foreground="Red" HorizontalAlignment="Left" Margin="557,161,0,0" VerticalAlignment="Top" Width="192" Grid.Column="1"/>
+        <Button Content="BACK" FontSize="18" BorderThickness="4"  Foreground="Crimson" Click="Button_Click" Grid.Column="1" HorizontalAlignment="Left" Margin="512,155,0,0" VerticalAlignment="Top" Width="102" Height="36" Grid.Row="1" RenderTransformOrigin="-0.195,0.029"/>
+
+    </Grid>
+</Window>

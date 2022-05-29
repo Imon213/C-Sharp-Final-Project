@@ -1,0 +1,30 @@
+﻿<Window x:Class="login1Page.doctorSearch"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:login1Page"
+        mc:Ignorable="d"
+        Title="doctorSearch" Height="450" Width="1200">
+    <Grid Background="Chartreuse">
+        <Label Content="ডাক্তারের  নাম লিখুনঃ" FontSize="16" HorizontalAlignment="Left" Margin="389,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.364,1.932"/>
+        <Label Content="ডাক্তারের  আইডি লিখুনঃ" FontSize="16" HorizontalAlignment="Left" Margin="389,207,0,0" VerticalAlignment="Top" Width="230"/>
+        <TextBox x:Name="drName" HorizontalAlignment="Left" FontSize="16" Height="23" Margin="624,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <TextBox x:Name="drId" HorizontalAlignment="Left" FontSize="16" Height="23" Margin="624,207,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.538,-0.391"/>
+        <Border BorderBrush="Black" Background="AliceBlue" BorderThickness="1" HorizontalAlignment="Left" Height="96" Margin="183,32,0,0" VerticalAlignment="Top" Width="824">
+            <Label Content="Patient Name:" FontSize="16" Foreground="Red" Margin="59,34,646,31" RenderTransformOrigin="0.829,0.457"/>
+        </Border>
+        <Label Content="Age:" FontSize="16" Foreground="red" HorizontalAlignment="Left" Margin="503,67,0,0" VerticalAlignment="Top" Width="43" RenderTransformOrigin="1.349,0.71"/>
+        <Label Name="age"  Content="" FontSize="16" Foreground="Green" HorizontalAlignment="Left" Margin="551,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.75,-0.269" Width="54"/>
+        <Label Name="name" Content="" FontSize="16" Foreground="Green" HorizontalAlignment="Left" Margin="364,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.211,0.423" Width="112"/>
+        <Label Content="Mobile:" FontSize="16" Foreground="Red" HorizontalAlignment="Left" Margin="787,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.579,-9.769"/>
+        <Label Name="phn" Content="" FontSize="16" Foreground="Green" HorizontalAlignment="Left" Margin="855,67,0,0" VerticalAlignment="Top" Width="107"/>
+        <Label Content="Gender:" Foreground="Red" FontSize="16"   HorizontalAlignment="Left" Margin="650,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-3.184,-4.481"/>
+        <Label Name="gender" Content="" Foreground="Green" FontSize="16" HorizontalAlignment="Left" Margin="720,67,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.658,-2.385" Width="62"/>
+        <Button Content="সাক্ষাৎ নিশ্চিত করুন" Click="Button_Click" Background="Bisque" HorizontalAlignment="Left" Margin="459,301,0,0" VerticalAlignment="Top" Width="198" Height="38"/>
+        <Label Content="সাক্ষাতের নাম লিখুন" FontSize="16" HorizontalAlignment="Left" Margin="389,253,0,0" VerticalAlignment="Top" Width="157"/>
+        <TextBox x:Name="conName" HorizontalAlignment="Left" Height="23" FontSize="16" Margin="624,253,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="210"/>
+        <Label Content="আকর্ষণঃ সাক্ষাৎ নির্বাচনের জন্য  যথাযথ  ভাবে উপরের তথ্য প্রদান  করুন।" Foreground="red" HorizontalAlignment="Left" Margin="364,374,0,0" VerticalAlignment="Top" Width="398" RenderTransformOrigin="0.575,0.577"/>
+        <Button Content="BACK" Click="Button_Click_1" HorizontalAlignment="Left" Margin="980,372,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Window>

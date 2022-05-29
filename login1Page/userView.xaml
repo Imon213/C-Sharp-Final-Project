@@ -1,0 +1,73 @@
+﻿<Window x:Class="login1Page.userView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:login1Page"
+        mc:Ignorable="d"
+        Title="userView" Height="550" Width="1200">
+    <Grid Background="SkyBlue" Margin="0,0,2,3">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="377*"/>
+            <ColumnDefinition Width="105*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="DR" FontSize="30" Foreground="Green" HorizontalAlignment="Left" Margin="710,25,0,0" VerticalAlignment="Top" Width="452" RenderTransformOrigin="0.403,0.622" Grid.ColumnSpan="2"/>
+        <Label x:Name="DR_Copy" Content="" FontSize="20" Foreground="Green" HorizontalAlignment="Left" Margin="635,176,0,0" VerticalAlignment="Top" Width="67" RenderTransformOrigin="0.403,0.622"/>
+        <DataGrid Name="profileshow" FontSize="20" Background="Silver" Foreground="Green" BorderBrush="Beige" HorizontalAlignment="Left" Height="97" Margin="121,165,0,0" VerticalAlignment="Top" Width="581"/>
+        <DataGrid x:Name="grid1" HorizontalAlignment="Left" FontSize="12" Foreground="Green"  Height="130" Margin="10,320,0,0" VerticalAlignment="Top" Width="767"/>
+        <Border BorderBrush="Black"  BorderThickness="1" Background="Green" HorizontalAlignment="Left" Height="91" Margin="-3,0" VerticalAlignment="Top" Width="1196" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2">
+            <Border.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.312"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Border.RenderTransform>
+        </Border>
+        <Button Content="SHOW PROFILE"  Click="show_Click" FontSize="16" Background="Green" BorderBrush="Green"  HorizontalAlignment="Left" VerticalAlignment="Top" Width="123" Margin="64,36,0,0" RenderTransformOrigin="0.528,0.125">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.648"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button Content="ADD CONSULTATION" Background="Green" BorderBrush="Green" FontSize="16" HorizontalAlignment="Left"  Click="addcon_Click" Margin="247,35,0,0" VerticalAlignment="Top" Width="165"/>
+        <Button Content="SHOW CONSULTATION" FontSize="16" Background='Green' BorderBrush="Green" HorizontalAlignment="Left" Click="showcon_Click" Margin="509,35,0,0" VerticalAlignment="Top" Width="178"/>
+        <Button Content="SHOW PATIENTLIST" FontSize="16" Background="Green" BorderBrush="Green" Click="pList_Click" HorizontalAlignment="Left" VerticalAlignment="Top" Width="154" Margin="777,35,0,0"/>
+        <Button Content="LOGOUT" Background="Green" BorderBrush="Green" FontSize="16" Click="Button_Click" HorizontalAlignment="Left" Margin="100,35,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.453,0.22" Grid.Column="1"/>
+        <StackPanel Background="Aquamarine" HorizontalAlignment="Left" Height="424" Margin="777,92,0,0" VerticalAlignment="Top" Width="413" Grid.ColumnSpan="2"/>
+        <Label Content="Update Profile" FontSize="25" FontWeight="Bold" FontStyle='Italic' HorizontalAlignment="Left" VerticalAlignment="Top" Margin="876,116,0,0" Grid.ColumnSpan="2" Width="189"/>
+        <Label Content="Name" FontSize="14" FontStyle="Italic" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.158,1.885" Margin="804,196,0,0"/>
+        <TextBox x:Name="mb1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2" Margin="886,199,0,0"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="1" Margin="168,199,0,0" Height="23" Click="Button_Click_1"/>
+        <Label Content="ID" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="804,230,0,0" RenderTransformOrigin="3.737,4.538" Width="47"/>
+        <TextBox x:Name="mb2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2" Margin="886,233,0,0"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="168,233,0,0" Grid.Column="1" Height="26" Click="Button_Click_2"/>
+        <Label Content="Email" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="1.158,2.269" Margin="804,264,0,0" Width="47"/>
+        <TextBox x:Name="mb3" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Margin="886,267,0,0" Grid.ColumnSpan="2"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="1" Margin="168,267,0,0" Height="24" Click="Button_Click_3"/>
+        <Label Content="Gender" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="804,302,0,0" Width="59" RenderTransformOrigin="0.809,0.5"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="1" Margin="168,303,0,0" Height="23" Click="Button_Click_4"/>
+        <Label Content="Address" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="804,336,0,0" Width="59"/>
+        <TextBox x:Name="mb4" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2" Margin="886,339,0,0"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="168,339,0,0" Grid.Column="1" Height="23" Click="Button_Click_5"/>
+        <ComboBox Name="cb1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2" Margin="886,302,0,0" RenderTransformOrigin="0.508,0.909" Height="26">
+            <ComboBoxItem IsSelected="True">Male</ComboBoxItem>
+            <ComboBoxItem>Female</ComboBoxItem>
+        </ComboBox>
+        <Label Content="Depertment" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="804,375,0,0" Width="73"/>
+        <TextBox x:Name="mb5" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Grid.ColumnSpan="2" Margin="886,378,0,0"/>
+        <Button Content="UPDATE" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Grid.Column="1" Margin="168,378,0,0" Height="23" Click="Button_Click_6" />
+        <Label Content="Enter User Name" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="809,432,0,0" Width="112"/>
+        <Label Content="Enter Password" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="809,472,0,0" Width="95"/>
+        <TextBox x:Name="mb6" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" Grid.ColumnSpan="2" Margin="921,436,0,0"/>
+        <PasswordBox x:Name="mb7" HorizontalAlignment="Left" VerticalAlignment="Top" Width="213" Margin="921,476,0,0" Grid.ColumnSpan="2" Height="22"/>
+        <Label Content="" Name="l1" Foreground="Red" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="926,410,0,0" Grid.ColumnSpan="2" Width="208"/>
+        <Label Content="" Name="l2" Foreground="red" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="926,454,0,0" Width="208" Grid.ColumnSpan="2"/>
+
+    </Grid>
+</Window>
